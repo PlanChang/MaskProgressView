@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D131" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yId-Ym-ZbJ">
+                                <rect key="frame" x="150" y="150" width="300" height="300"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Rtw-us-JZd" customClass="PLMaskAnimationView">
+                                        <rect key="frame" x="0.0" y="0.0" width="300" height="300"/>
+                                        <color key="backgroundColor" red="0.81176470590000005" green="0.65490196079999996" blue="0.15686274510000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="6jw-Yd-ifn"/>
+                                    <constraint firstAttribute="trailing" secondItem="Rtw-us-JZd" secondAttribute="trailing" id="9ME-vz-cNN"/>
+                                    <constraint firstAttribute="bottom" secondItem="Rtw-us-JZd" secondAttribute="bottom" id="BDw-KG-p1j"/>
+                                    <constraint firstAttribute="height" constant="300" id="RhO-Rc-FgH"/>
+                                    <constraint firstItem="Rtw-us-JZd" firstAttribute="leading" secondItem="yId-Ym-ZbJ" secondAttribute="leading" id="g9z-Uz-9MO"/>
+                                    <constraint firstItem="Rtw-us-JZd" firstAttribute="top" secondItem="yId-Ym-ZbJ" secondAttribute="top" id="l3L-Sw-6ed"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerY" secondItem="yId-Ym-ZbJ" secondAttribute="centerY" id="haN-nn-hwl"/>
+                            <constraint firstAttribute="centerX" secondItem="yId-Ym-ZbJ" secondAttribute="centerX" id="yqQ-fV-IfY"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="maskAnimationView" destination="Rtw-us-JZd" id="rIN-a3-HTa"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
